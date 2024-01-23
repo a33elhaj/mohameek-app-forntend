@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>MohameekAppFrontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>:root{--dark-color:#070917;--light-color:#E8F7FB;--orange-color:#DA722C;--blue-color:#057ADA;--dark-blue-color:#023047;--light-blue-color:#6F7DFB;--maint:#016184;--main:linear-gradient(to bottom, #3c8ebd, #3280ae, #29729f, #1e6590, #135881);--white:#ffffff;--text:#6B6B6B}*,*:after,*:before{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;direction:rtl;text-align:right;background:#ffffff;color:#263043}.wrapper{max-width:1134px;margin:0 auto}.btn{padding:16px 32px;border-radius:24px;color:#fff;display:inline-block;font-weight:700;font-size:16px;text-decoration:none;position:relative}.btn.dark{background:var(--dark-blue-color)}header{background-color:#fff;height:100vh;width:100%}nav{display:flex;justify-content:space-between;align-items:center;position:fixed;width:1134px;top:0;padding:36px 0;z-index:100;transition:all .4s ease}nav .logo{font-family:Raleway,sans-serif;font-size:40px;font-weight:900;color:var(--maint)}nav ul{display:flex;align-items:center;gap:60px;list-style:none;margin:0}nav ul li a{font-family:Poppins,sans-serif;font-size:16px;font-weight:700;text-decoration:none;color:var(--maint)}footer{background:var(--dark-color);color:#fff;margin-top:100px;padding:70px 0}.links-container{display:grid;grid-template-columns:2fr 2fr 3fr}.links-container h3{color:var(--orange-color);font-family:Poppins,sans-serif;font-size:18px;font-weight:700}footer .links-container ul{font-family:Poppins,sans-serif;font-size:16px;font-weight:400;list-style:none;padding-left:20px}footer .links-container ul li{margin:16px 0}footer .links-container a{text-decoration:none;color:#fff}footer .social{margin-left:20px}footer .social a{margin-right:28px}footer form{margin-left:20px;margin-top:16px;position:relative}footer form input{color:#000;font-family:Poppins,sans-serif;font-size:16px;font-weight:400;border-radius:8px;padding:8px 32px;border:none;width:100%}footer form .subscribe-btn{position:absolute;left:5px;top:50%;transform:translateY(-50%);border-radius:8px;background:var(--dark-blue-color);padding:6px 32px;border:0;color:#fff;font-family:Poppins,sans-serif;font-size:16px;font-weight:400;cursor:pointer}footer .copyright{margin-top:36px}nav.mobile-nav,.mobile-menu-container{display:none}@media (max-width: 1100px){.btn{padding:12px 32px}.wrapper{padding:0 100px}nav{width:100%;left:0;right:0;padding:36px 100px}header,header .wrapper{max-height:1100px}.links-container{grid-template-columns:1fr 1fr}footer .links-container .links:last-child{grid-column:1/3}}@media (max-width: 800px){nav{display:none}nav.mobile-nav{display:flex}.mobile-menu-container{position:fixed;height:100vh;width:100%;top:0;left:100%;background-color:var(--dark-color);display:flex;align-items:center;justify-content:center;z-index:100}.mobile-menu-container .close-icon{position:fixed;top:32px;right:100px;opacity:0;pointer-events:none;transition:all .4s ease}.mobile-menu-container ul{list-style:none;padding:0}.mobile-menu-container ul li{margin:30px 0;text-align:center}.mobile-menu-container ul li a{color:#fff;text-decoration:none;font-family:Poppins,sans-serif;font-size:24px;font-weight:400}}</style><link rel="stylesheet" href="styles.ca2f12de68c943a4.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.ca2f12de68c943a4.css"></noscript></head>
+
+<body>
+
+  <header>
+    <!-- custom navbars desktop tablet and mobile -->
+    <div class="wrapper">
+      <!-- begin of desktop navbar -->
+      <!-- <div class="top-header"></div> -->
+      <nav id="desktop-nav">
+        <div class="logo">محاميــك</div>
+
+        <ul>
+          <li>
+            <a href="#">الرئيسية</a>
+          </li>
+
+          <li>
+            <a href="#">خدماتنا</a>
+          </li>
+
+          <li>
+            <a href="#">من نحن</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn dark">إنضم إلينا</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- end of custom navbars desktop tablet and mobile -->
+
+    <!-- begin of mobile navigation -->
+
+    <nav id="mobile-nav" class="mobile-nav">
+
+      <div id="menu-icon" class="menu-icon">
+
+        <img src="assets/images/menu-icon.svg" alt>
+      </div>
+
+      <div class="logo">محاميك</div>
+    </nav>
+
+    <div id="mobile-menu-container" class="mobile-menu-container">
+
+      <div id="close-icon" class="close-icon">
+        <img src="assets/images/close-icon.svg" alt>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#">الرئيسية</a>
+        </li>
+
+        <li>
+          <a href="#">خدماتنا</a>
+        </li>
+
+        <li>
+          <a href="#">من نحن</a>
+        </li>
+
+        <li>
+          <a href="#" class="btn dark">إنضم إلينا</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- end of mobile navigation -->
+  </header>
+
+  <app-root></app-root>
+
+  <footer>
+    <div class="wrapper">
+      <div class="links-container">
+
+        <div class="links">
+
+          <h3>مجموعة العثيم المتحدة</h3>
+
+          <ul>
+            <li>
+              <a href="#">للتعرف علينا</a>
+            </li>
+
+            <li>
+              <a href="#">خدماتنا</a>
+            </li>
+
+            <li>
+              <a href="#">للاستشارات الخاصة</a>
+            </li>
+
+            <li>
+              <a href="#">سياسة الخصوصية</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="links">
+
+
+          <h3>روابط تخصنا</h3>
+
+          <ul>
+            <li>
+              <a href="#">العثيم -------</a>
+            </li>
+
+            <li>
+              <a href="#">العثيم -------</a>
+            </li>
+
+            <li>
+              <a href="#">العثيم --------</a>
+            </li>
+
+            <li>
+              <a href="#">العثيم ---------</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <h3>تواصل معنا</h3>
+          <ul>
+            <li>info@mohameek.net</li>
+          </ul>
+
+          <div class="social">
+            <a href="#">
+              <img src="assets/images/facebook-icon.svg" alt>
+            </a>
+
+            <a href="#">
+              <img src="assets/images/instagram-icon.svg" alt>
+            </a>
+          </div>
+
+          <form action="#">
+            <input name="Subscribe" type="text" placeholder="ادخل بريدك الإلكتروني">
+            <button class="subscribe-btn">أشترك في النشرة</button>
+          </form>
+        </div>
+      </div>
+
+      <p class="copyright">This website is developed by hdr elhaj © 2023</p>
+    </div>
+  </footer>
+
+
+
+<script src="runtime.ec7f46b9f6daf6b1.js" type="module"></script><script src="polyfills.45021c61cd4abe59.js" type="module"></script><script src="main.8dc85ca97e658d71.js" type="module"></script></body>
+
+</html>

@@ -1,0 +1,82 @@
+<div class="register-form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>الاسم كامل</label>
+      <input type="text" formControlName="fullname" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && form.controls['fullname'].errors }" />
+      <div *ngIf="submitted && form.controls['fullname'].errors" class="invalid-feedback">
+        <div *ngIf="form.controls['fullname'].errors['required']">يجب كتابة الاسم الاول واسم العائلة</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>رقم الجوال</label>
+      <input type="text" formControlName="phone" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && form.controls['phone'].errors }" />
+      <div *ngIf="submitted && form.controls['phone'].errors" class="invalid-feedback">
+        <div *ngIf="form.controls['phone'].errors['required']">يجب ادخال رقم الجوال</div>
+        <div *ngIf="form.controls['phone'].errors['minlength']">
+          رقم الجوال يتكون من 10 ارقام
+        </div>
+        <div *ngIf="form.controls['phone'].errors['maxlength']">
+          رقم الجوال يتكون من 10 ارقام فقط
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>البريد الإلكتروني</label>
+      <input type="text" formControlName="email" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && form.controls['email'].errors }" />
+      <div *ngIf="submitted && form.controls['email'].errors" class="invalid-feedback">
+        <div *ngIf="form.controls['email'].errors['required']">يجب ادخال البريد الالكتروني</div>
+        <div *ngIf="form.controls['email'].errors['email']">يجب كتابة بريد صحيح</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" formControlName="password" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && form.controls['password'].errors }" />
+      <div *ngIf="submitted && form.controls['password'].errors" class="invalid-feedback">
+        <div *ngIf="form.controls['password'].errors['required']">يجب ادخال كلمة المرور</div>
+        <div *ngIf="form.controls['password'].errors['minlength']">
+          يجب ان لا يقل طول كلمة المرور عن 6 حروف
+        </div>
+        <div *ngIf="form.controls['password'].errors['maxlength']">
+          يجب ان لا يزيد طول كلمة المرول عن 40 حرف
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="password" formControlName="confirmPassword" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && form.controls['confirmPassword'].errors }" />
+      <div *ngIf="submitted && form.controls['confirmPassword'].errors" class="invalid-feedback">
+        <div *ngIf="form.controls['confirmPassword'].errors['required']">
+          يجب تأكيد كلمة المرور
+        </div>
+        <div *ngIf="form.controls['confirmPassword'].errors['matching']">
+          كلمة المرور غير متطابقة
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group form-check">
+      <input type="checkbox" formControlName="acceptTerms" class="form-check-input"
+        [ngClass]="{ 'is-invalid': submitted && form.controls['acceptTerms'].errors }" />
+      <label for="acceptTerms" class="form-check-label">أوافق على الشروط والقيود</label>
+      <div *ngIf="submitted && form.controls['acceptTerms'].errors" class="invalid-feedback">
+        يجب الموافقة على الشروط
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">تسجيل</button>
+      <button type="button" (click)="onReset()" class="btn btn-warning float-right">
+        تفريغ جميع الحقول
+      </button>
+    </div>
+  </form>
+</div>
